@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(45deg, #00ffff, #3175b8);
+}
+
+  h1 {
+  text-align: center;
+  border-bottom: solid;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  border-style: double;
+  border-width: 10px;
+}
+
+h4 {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+
+#game div {
+  width: 100px;
+  height: 140px;
+  margin: 20px;
+  background-position: center;
+}
+
+#game div:not(.flipped) {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAtxPwRFtKVj-gNZP9kjWGCfZFHj4RzZd5lQ&usqp=CAU);
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+#score {
+  margin-left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#timer {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+  font-size: xx-large;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+table {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+th {
+  font-size: xx-large;
+  border-bottom: solid;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+td {
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
