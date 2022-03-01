@@ -107,14 +107,14 @@ function handleCardClick(evt) {
     }, 500);
     /** Display the highest score */
     compareScores();
-    
+
   }
 }
 //write in the code above to check if they made it into the leaderboard, if so prompt name, if not try again
 // const name = prompt('You made it into the leaderboard! Enter your name:');
 
 
-/** Check if the two flipped cards match */ 
+/** Check if the two flipped cards match */
 
 function matches(flippedCards) {
   if (flippedCards[0].style.backgroundColor === flippedCards[1].style.backgroundColor) {
@@ -159,7 +159,7 @@ function resetGame() {
 
   const colors = shuffle(COLORS);
   createCards(colors);
- 
+
   startGame = false;
 }
 
@@ -190,7 +190,7 @@ function stop() {
 let player;
 startBtn.addEventListener('click', () => {
   player = window.prompt('Please enter your name before you begin the game');
-  while (player === null || player == '') {
+  while (player === null || player.trim().length === 0) {
     player = window.prompt('Please enter your name before you begin the game');
   }
 })
